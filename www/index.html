@@ -16,17 +16,23 @@
       align-items: center;
       justify-content: center;
     }
+
+    #fps {
+      white-space: pre;
+      font-family: monospace;
+    }
   </style>
 </head>
 
 <body>
   <canvas id="game-of-life-canvas"></canvas>
-  <button id="play-pause"></button>
-  <span>
+  <button style="margin-top: 10px" id="play-pause"></button>
+  <span style="margin-top: 10px">
     <label for="range">Speed: 1</label>
-    <input id="speed" name="speed" type="range" min="1" max="10" />
+    <input id="speed" name="speed" type="range" min="1" max="10" value="1" />
     <label for="range">10</label>
   </span>
+  <div style="margin-top: 10px" id="fps"></div>
   <script src="./bootstrap.js"></script>
 </body>
 
