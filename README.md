@@ -22,6 +22,7 @@ brew install node
 wasm-pack build # build
 wasm-pack build --release # build for release
 cargo test # run the tests
+wasm-pack test --firefox --headless # run brower tests
 cargo fmt # format the code
 cargo clippy # run the linter
 cd www; npm run serve # run the local HTTP server
